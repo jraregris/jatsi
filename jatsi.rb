@@ -3,7 +3,9 @@ def roll_die
 end
 
 def roll_hand(n)
-  [roll_die, roll_die, roll_die, roll_die, roll_die]
+  hand = []
+  n.times { hand << roll_die }
+  return hand
 end
 
 def score_upper num, hand
